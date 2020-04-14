@@ -17,6 +17,22 @@ class MainActivity : BaseActivity() {
 
     override fun setupEvents() {
 
+//        전체동의 체크박스. : 체크 되면 나머지를 전부 체크, 해제되면 모두 해제
+
+        allAcceptCheckBox.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (isChecked) {
+                useTermAcceptCheckBox.isChecked = true
+                personalInfoAcceptCheckBox.isChecked = true
+                marketingAcceptCheckBox.isChecked = true
+            }
+            else {
+                useTermAcceptCheckBox.isChecked = false
+                personalInfoAcceptCheckBox.isChecked = false
+                marketingAcceptCheckBox.isChecked = false
+            }
+        }
+
+
         idEdt.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
                 val inputVal = s.toString()

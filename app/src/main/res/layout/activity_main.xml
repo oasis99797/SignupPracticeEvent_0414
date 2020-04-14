@@ -26,4 +26,40 @@
         android:text="최소 여섯글자 이상으로 해주세요." />
 
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="약관 동의" />
+
+    <CheckBox
+        android:id="@+id/allAcceptCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="전체 동의" />
+
+
+    <CheckBox
+        android:id="@+id/useTermAcceptCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="이용약관 동의" />
+
+    <CheckBox
+        android:id="@+id/personalInfoAcceptCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="개인정보 활용 동의" />
+
+    <CheckBox
+        android:id="@+id/marketingAcceptCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="마케팅 정보 수신 동의" />
+
+
 </LinearLayout>
